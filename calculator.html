@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+
+        body{
+            background-color:#e3f9ff ;
+        }
+           .container{
+            width: 100%;
+            /* height:100vh; */
+            background:#e3f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+
+        /* *{
+            background-color:#00A7B5;
+        } */
+
+        #no1{
+            background-color: #fff;
+           
+        }
+
+        #no2{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+       <form>
+        <label for=""></label>
+        <input id="no1" type="number">
+        <div><br>
+            <button onclick="One()">1</button>
+            <button onclick="Two()">2</button>
+            <button onclick="Three()">3</button>
+            <button onclick="Plus()">+</button>
+        </div>
+
+        <div>
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button onclick="Minor()">-</button>
+        </div>
+
+        <div>
+             <button onclick="seven()">7</button>
+             <button onclick="Eight()">8</button>
+             <button onclick="nine()">9</button>
+             <button onclick="divide()">/</button>
+        </div>
+
+        <div>
+            <button onclick="point()">.</button>
+            <button onclick="zero()">0</button>
+            <button onclick="equal()">=</button>
+        </div>
+
+    
+
+
+        
+
+        <p id="total">
+
+        </p>
+    </form>      
+    </div>
+
+    <!-- <div class="container 1">
+        <button style="background-color: #fff;" onclick="One()">1</button>
+        <button style="background-color: #fff;" onclick="Two()">2</button>
+        <button style="background-color: #fff;" onclick="Three()">3</button>
+        <button style="background-color: #fff;" onclick="Plus()">+</button>
+        <button style="background-color: #fff;" onclick="Minor()">-</button>
+        <button style="background-color: #fff;" onclick="Multiple()">*</button>
+        <button style="background-color: #fff;" onclick="Divide()">/</button>
+        <button style="background-color: #fff;" onclick="Delete()">Del</button>
+    </div> -->
+
+    
+
+    <script>
+        
+
+
+        function Plus(){
+            console.log("Plus")
+            let no1 = document.getElementById("no1").value
+            let no2 = document.getElementById("no2").value
+            let total = parseInt(no1) + parseInt(no2)
+            alert(total)
+            console.log(total)
+        }
+
+        function Minor(){
+            console.log("Minor")
+            let no1 = document.getElementById("no1").value
+            let no2 = document.getElementById("no2").value
+            let total = parseInt(no1) - parseInt(no2)
+            alert(total)
+            console.log(total)
+        }
+
+        function Multiple(){
+            console.log("Multiple")
+            let no1 = document.getElementById("no1").value
+            let no2 = document.getElementById("no2").value
+            let total = parseInt(no1) * parseInt(no2)
+            alert(total)
+            console.log(total)
+        }
+
+        function Divide(){
+            console.log("Divide")
+            let no1= document.getElementById("no1").value
+            let no2= document.getElementById("no2").value
+            let total = parseInt(no1) / parseInt(no2)
+            alert(total)
+            console.log(total)
+        }
+
+        function Delete(){
+            console.log("Delete")
+            let no1= document.getElementById("no1").value
+            let no2= document.getElementById("no2").value
+            let total = ''
+            alert(total)
+            console.log(total)
+        }
+
+
+    </script>
+    
+</body>
+</html>
+
